@@ -13,12 +13,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { Prova2Component } from './prova2/prova2.component';
 import {MatInputModule} from '@angular/material/input';
+import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProvaComponent,
-    Prova2Component
+    Prova2Component,
+    MenuBurgerComponent
   ],
   imports: [
     BrowserModule,
