@@ -60,3 +60,14 @@
    .cerchio_off::after {
     transform: rotate(-45deg)
    } 
+
+
+
+   .altraClasse{
+    background-color: greenyellow;
+   }
+
+   .classeFabio
+   {
+    background-color: blue;
+   }

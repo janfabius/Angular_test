@@ -20,6 +20,8 @@ export class Prova2Component {
 
   numero = 3;
 
+  color = 'red';
+
 
   onInput(event: Event){
     

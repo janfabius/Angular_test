@@ -35,3 +35,24 @@
   <p *ngSwitchDefault>Default</p>
 
 </div>
+
+
+<ul>
+  <li *ngFor="let persona of persone; index as i, count as c">
+    {{i+1}}/{{c}} - 
+    <span class="cerchio" *ngIf=persona.isOnline [ngStyle]="{'background':'green'}"></span>
+    <span class="cerchio_off" *ngIf=!persona.isOnline [ngStyle]="{'background': color}"></span>
+    {{persona.nome}} - {{persona.cognome}}
+  </li>
+</ul>
+
+
+<ul>
+  <li *ngFor="let persona of persone; index as i, count as c">
+    {{i+1}}/{{c}} - 
+    <span class="cerchio" [ngClass]="{'cerchio altraClasse': persona.isOnline, 'cerchio_off': !persona.isOnline, 'classeFabio': persona.nome == 'Fabio'}"></span>
+    {{persona.nome}} - {{persona.cognome}}
+  </li>
+</ul>
+
+
