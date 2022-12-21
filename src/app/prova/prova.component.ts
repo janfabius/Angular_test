@@ -1,4 +1,4 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, Input, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-prova',
@@ -8,6 +8,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 export class ProvaComponent implements OnInit, AfterContentChecked, AfterContentInit,
 AfterViewChecked, AfterViewInit, DoCheck, OnDestroy {
 
+  @Input() data:any;
 
   cani = [
   {
@@ -27,6 +28,9 @@ isDisabled = false
 immagine = ''
 immagine1 = 'https://www.cartadaparati.com/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w03736-small.jpg'
 immagine2 = 'https://www.settemuse.it/sfondi_tecno/sfondi-iphone/sfondi-iphone-001.jpg'
+
+
+
 
 
   constructor(){
@@ -53,6 +57,7 @@ immagine2 = 'https://www.settemuse.it/sfondi_tecno/sfondi-iphone/sfondi-iphone-0
 
   ngOnInit(): void {
     console.log("INIZIALIZZAZIONE");
+    console.log(this.data);
 
     let counter = 0
 
