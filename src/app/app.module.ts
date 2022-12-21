@@ -14,13 +14,17 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { Prova2Component } from './prova2/prova2.component';
 import {MatInputModule} from '@angular/material/input';
 import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
+import { ListItemComponent } from './list-item/list-item.component';
+import { MenuOverComponent } from './menu-over/menu-over.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProvaComponent,
     Prova2Component,
-    MenuBurgerComponent
+    MenuBurgerComponent,
+    ListItemComponent,
+    MenuOverComponent
   ],
   imports: [
     BrowserModule,
