@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Prova2Component {
 
-  title = 'default';
+  title = 'ciao';
   isVisible = true;
 
   persone = [

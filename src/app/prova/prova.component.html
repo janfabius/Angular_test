@@ -37,14 +37,15 @@
 
 <button mat-raised-button color="primary" [disabled]="isDisabled">Primary</button> -->
 
-<div *ngFor="let frutta of data;">
+
+<div class="margin-display" *ngFor="let frutta of data; index as i">
 <mat-card class="example-card">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
+    <div mat-card-avatar  [ngClass]="{'example-header-image1': i+1==1, 'example-header-image2': i+1==2, 'example-header-image': (i+1)>2 }"></div>
     <mat-card-title>{{frutta.nome}}</mat-card-title>
     <mat-card-subtitle>{{frutta.paese}}</mat-card-subtitle>
   </mat-card-header>
-  <!-- <img mat-card-image [src]="immagine" alt="Photo of a Shiba Inu"> -->
+    <img mat-card-image [src]="immagine" height=300px alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>
       The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
@@ -58,4 +59,6 @@
   </mat-card-actions>
 </mat-card>
 </div>
+
+
   

@@ -29,6 +29,9 @@ immagine = ''
 immagine1 = 'https://www.cartadaparati.com/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w03736-small.jpg'
 immagine2 = 'https://www.settemuse.it/sfondi_tecno/sfondi-iphone/sfondi-iphone-001.jpg'
 
+avatar1 = 'https://material.angular.io/assets/img/examples/shiba1.jpg'
+avatar2 = 'https://material.angular.io/assets/img/examples/shiba2.jpg'
+
 
 
 

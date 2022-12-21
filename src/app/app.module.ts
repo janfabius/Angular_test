@@ -19,6 +19,8 @@ import { MenuOverComponent } from './menu-over/menu-over.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CheckBox1Component } from './check-box1/check-box1.component';
 import { ButtonBouncyComponent } from './button-bouncy/button-bouncy.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ButtonBouncyComponent } from './button-bouncy/button-bouncy.component';
     MatButtonModule,
     MatCardModule,
     MatSidenavModule,
-    MatInputModule
+    MatInputModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
