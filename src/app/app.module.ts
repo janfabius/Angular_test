@@ -16,6 +16,9 @@ import {MatInputModule} from '@angular/material/input';
 import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { MenuOverComponent } from './menu-over/menu-over.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CheckBox1Component } from './check-box1/check-box1.component';
+import { ButtonBouncyComponent } from './button-bouncy/button-bouncy.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { MenuOverComponent } from './menu-over/menu-over.component';
     Prova2Component,
     MenuBurgerComponent,
     ListItemComponent,
-    MenuOverComponent
+    MenuOverComponent,
+    ContactUsComponent,
+    CheckBox1Component,
+    ButtonBouncyComponent
   ],
   imports: [
     BrowserModule,
