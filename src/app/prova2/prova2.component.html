@@ -1,0 +1,37 @@
+
+
+<button mat-raised-button color="primary" (click)="onClick($event)">Primary</button>
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" [(ngModel)]="title">
+    </mat-form-field>
+    <p>{{title}}</p>
+
+
+<ng-template *ngIf="isVisible; then bloccoIf else bloccoElse"></ng-template>
+<ng-template #bloccoIf>
+  <p>IF STATUS</p>
+</ng-template>
+<ng-template #bloccoElse>
+  <p>ELSE STATUS</p>
+</ng-template>
+
+
+<ul>
+  <li *ngFor="let persona of persone; index as i, count as c">
+    {{i+1}}/{{c}} - 
+    <span class="cerchio" *ngIf=persona.isOnline></span>
+    <span class="cerchio_off" *ngIf=!persona.isOnline></span>
+    {{persona.nome}} - {{persona.cognome}}
+  </li>
+</ul>
+
+<div [ngSwitch]="numero">
+  <p *ngSwitchCase="1">uno</p>
+  <p *ngSwitchCase="2">due</p>
+  <p *ngSwitchCase="3">tre</p>
+  <p *ngSwitchCase="4">quattro</p>
+  <p *ngSwitchCase="5">cinque</p>
+  <p *ngSwitchDefault>Default</p>
+
+</div>
