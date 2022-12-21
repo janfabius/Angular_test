@@ -32,7 +32,5 @@ export class Prova2Component {
     this.title += ' Ho cliccato il pulsante!';
   }
 
-  
 
-  
 }
