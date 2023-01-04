@@ -21,6 +21,9 @@ import { CheckBox1Component } from './check-box1/check-box1.component';
 import { ButtonBouncyComponent } from './button-bouncy/button-bouncy.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import {MatIconModule} from '@angular/material/icon';
     MenuOverComponent,
     ContactUsComponent,
     CheckBox1Component,
-    ButtonBouncyComponent
+    ButtonBouncyComponent,
+    SideNavComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
